@@ -1,0 +1,13 @@
+.header {
+  background-color: $color-primario;
+  color: $color-secundario;
+}
+
+.header__logo {
+  width: 200px;
+  height: 200px;
+}
+
+.header__titulo {
+  font-size: 48px;
+}

@@ -28,3 +28,18 @@
 /**
  * Do NOT include anything else in this file!
  */
+
+
+// main.scss
+@import "1-settings/variables";
+@import "2-tools/mixins";
+@import "3-generic/reset";
+@import "3-generic/global";
+@import "4-elements/typography";
+@import "5-objects/contenedor";
+@import "6-components/plato";
+@import "6-components/header";
+@import "6-components/footer";
+@import "6-components/nav";
+@import "7-utilities/helpers";
+

@@ -1,0 +1,28 @@
+.plato-info {
+  padding: 20px;
+}
+
+.plato__detalle {
+  background: white;
+  padding: 20px;
+  margin-block: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plato__titulo {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.plato__imagen {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.plato__descripcion {
+  font-size: 1rem;
+  color: $color-texto;
+}
