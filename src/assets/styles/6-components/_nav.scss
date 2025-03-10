@@ -18,3 +18,8 @@
 .navegacion__item:hover {
   @include link($color-texto-oscuro);
 }
+
+
+.active {
+  color: $color-texto-oscuro;
+}
