@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Cuina Catalana</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <!-- Header -->
+    <include src="./views/header.html"></include>
+    <include src="./views/nav.html"></include>
+    
+    <!-- Main -->
+    <main class="contenedor">
+      <section class="plato-info">
+
+        <article class="plato__detalle plato__detalle--introduccion">
+          <h2 class="plato__titulo">Botifarra amb seques</h2>
+          <img class="plato__imagen" src="./assets/images/butifarra.jpg" alt="">
+          <p class="plato__descripcion">
+            La amb botifarra amb seques és un plat tradicional de la gastronomia catalana que consisteix en una botifarra a la graella acompanyada de mongetes (mongetes blanques o mongetes). És una recepta senzilla però molt apreciada pel seu sabor i vincle amb la cultura i la cuina popular de Catalunya.</p>
+        </article>
+        
+        <article class="plato__detalle plato__detalle--historia">
+          <h2 class="plato__titulo">Historia i origen</h2>
+          <img class="plato__imagen" src="./assets/images/butifarra.jpg" alt="">
+          <p class="plato__descripcion">
+            L´origen d´aquest plat es remunta a la cuina pagesa catalana de l´Edat Mitjana. En aquella època, els agricultors necessitaven menjars nutritius i econòmics, que aprofitessin els productes locals i fossin fàcils de preparar.
+
+            Les mongetes eren un aliment bàsic perquè els llegums eren fàcils de conservar i proporcionaven energia durant les llargues jornades de treball al camp.
+            La botifarra és una de les embotits més antics de Catalunya, amb referències que daten de l'època romana. La seva preparació s'ha mantingut pràcticament intacta des de llavors, i en molts masos s'hi elabora artesanalment.
+            Al llarg dels segles, aquest plat es va convertir en un emblema de la cuina catalana, passant de les llars rurals als restaurants i festes populars.</p>
+        </article>
+        
+        <article class="plato__detalle plato__detalle--popularidad">
+          <h2 class="plato__titulo">¿Perquè es una recepta famosa?</h2>
+          <img class="plato__imagen" src="./assets/images/butifarra.jpg" alt="">
+          <p class="plato__descripcion">
+            La fama d'aquest plat rau en diversos aspectes:
+
+            ✅ Sabor i senzillesa → Tot i ser un plat simple, la combinació de la botifarra sucosa amb la textura cremosa de les mongetes i un toc d'oli d'oliva el fa irresistible.
+
+            ✅ Ingredient icònic → La botifarra és un embotit típic de Catalunya, amb diverses varietats com la blanca, la negra o la de perol. La qualitat i el sabor artesanal han contribuït a la reputació del plat.
+
+            ✅ Símbol d'identitat → Es considera un plat patrimonial de Catalunya, representant la tradició i la connexió amb la terra.
+
+            ✅ Popularitat en restaurants i festivals → És una recepta que es troba a totes les fondes, masies i restaurants tradicionals catalans, i sol servir-se a festivals gastronòmics i fires.
+          </p>
+        </article>
+
+        <article class="plato__detalle plato__detalle--lugares">
+          <h2 class="plato__titulo">Llocs típics</h2>
+          <img class="plato__imagen" src="./assets/images/butifarra.jpg" alt="">
+          <p class="plato__descripcion">
+            "Mongetes amb Botifarra" es muy popular en toda Cataluña, pero hay algunas regiones donde destaca especialmente:
+
+            📍 Vallès Occidental y Vallès Oriental → Estas comarcas son famosas por su producción de butifarras de gran calidad, por lo que es un plato muy común en sus restaurantes y fiestas populares.
+
+            📍 Barcelona → Muchos restaurantes de cocina catalana tradicional en la capital incluyen este plato en su menú, tanto en su versión más clásica como en versiones más gourmet.
+
+            📍 Girona y la Garrotxa → En esta zona se elabora una butifarra artesana excepcional, lo que ha hecho que el plato gane aún más protagonismo.
+
+            📍 Ferias gastronómicas y fiestas mayores → Es un plato imprescindible en muchas festividades locales, como la Fira de la Botifarra en La Garriga o la Fira de l’Embotit en Olot.
+          </p>
+        </article>
+      </section>
+    </main>
+    
+    <!-- Footer -->
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
