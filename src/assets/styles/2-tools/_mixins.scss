@@ -12,3 +12,9 @@
   letter-spacing: 2px;
   cursor: pointer;
 }
+
+@function text-shadow($depth) {
+  @return 0px $depth * 1px $depth * 2px rgba(0, 0, 0, 0.4);
+}
+
+

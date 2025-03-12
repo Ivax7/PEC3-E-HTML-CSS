@@ -8,36 +8,37 @@
 
 .likes__buttons {
   margin-top: 10px;
+  
+  button {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin-inline: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background: #ddd;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &.selected {
+      background: #4CAF50;
+      color: white;
+      border: none;
+    }
+
+    &[data-vote="dislike"].selected {
+      background: #D32F2F;
+    }
+  }
 }
 
-.likes__button {
-  background: #f0f0f0;
-  border: 1px solid #ccc;
-  padding: 10px 15px;
-  margin-inline: 5px;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.likes__button:hover {
-  background: #ddd;
-}
-
-.likes__button:active {
-  transform: scale(0.95);
-}
-
-.likes__button.selected {
-  background: #4CAF50; /* Verde para "Me gusta" */
-  color: white;
-  border: none;
-}
-
-.likes__button[data-vote="dislike"].selected {
-  background: #D32F2F; /* Rojo para "No me gusta" */
-}
 
 
 

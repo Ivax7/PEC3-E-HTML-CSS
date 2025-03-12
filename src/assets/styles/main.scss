@@ -7,7 +7,6 @@
  * Import variables
  */
 
-@import "variables";
 
 /**
  * Import npm dependencies
@@ -23,7 +22,6 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
 
 /**
  * Do NOT include anything else in this file!
@@ -38,7 +36,6 @@
 @import "4-elements/typography";
 @import "5-objects/contenedor";
 @import "6-components/plato";
-@import "6-components/receta";
 @import "6-components/likes";
 @import "6-components/header";
 @import "6-components/footer";

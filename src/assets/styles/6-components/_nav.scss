@@ -1,5 +1,5 @@
 .navegacion {
-  background-color: white;
+  background-color: $color-secundario;
   flex-direction: row;
 }
 
@@ -13,6 +13,17 @@
   margin: 0 40px;
   @include link($color-texto);
   transition: all .2s ease-in-out;
+
+  @include responsive(medium) {
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  
+  @include responsive(small) {
+    margin: 0;
+    font-size: 14px;
+  }
+
 }
 
 .navegacion__item:hover {
@@ -22,4 +33,7 @@
 
 .active {
   color: $color-texto-oscuro;
+  text-shadow: text-shadow(2);
 }
+
+
