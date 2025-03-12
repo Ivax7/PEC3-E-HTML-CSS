@@ -1,8 +1,8 @@
 .plato-info {
   padding: 20px;
+  margin-block: 10px;
   background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-block: 10px;
 }
 
 .plato__detalle {
@@ -11,9 +11,9 @@
 }
 
 .plato__titulo {
+  margin-bottom: 10px;
   font-size: 38px;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .plato__imagen {
@@ -23,8 +23,8 @@
 }
 
 .plato__descripcion {
+  padding-inline: 40px;
+  margin-block: 12px;
   font-size: 18px;
   color: $color-texto;
-  margin-block: 12px;
-  padding-inline: 40px;
 }
