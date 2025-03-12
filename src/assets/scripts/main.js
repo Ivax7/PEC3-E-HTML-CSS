@@ -34,7 +34,10 @@ setTimeout(() => {
 
 
 
+
+
 // NAV FUNCIONALIDAD
+document.addEventListener('DOMContentLoaded', function() {
 
   $navItems = document.querySelectorAll('.navegacion__item');
   $sectionContent = document.querySelector('.plato-info');
@@ -118,3 +121,6 @@ $navItems.forEach((item) => {
       }
     });
   });
+
+
+});
