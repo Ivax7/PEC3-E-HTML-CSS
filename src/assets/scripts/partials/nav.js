@@ -64,7 +64,7 @@ export function navFunction() {
   </article>
   `
   
-  $navItems.forEach((item) => {
+$navItems.forEach((item) => {
     item.addEventListener("click", () => {
       // Eliminar la clase 'active' de todos los elementos de navegación
       $navItems.forEach((navItem) => {
@@ -85,5 +85,3 @@ export function navFunction() {
     });
   });
 }
-  
-  

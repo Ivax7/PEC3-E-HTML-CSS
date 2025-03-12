@@ -15,20 +15,25 @@
   console.log(`Hello, ${university}!`);
 } )();
 
+document.addEventListener('DOMContentLoaded', function() {
+  navFunction();
+  likesSystem();
+  
+  setTimeout(() => {
+    alertMessage();
+  }, 2500);
+});
 
 // NAV FUNCIONALIDAD
 import { navFunction } from './partials/nav';
-navFunction();
+
 
 
 // LIKE / DISLIKE FUNCIONALIDAD
 import { likesSystem } from './partials/likes';
-likesSystem();
+
 
 // ALERT FUNCIONALIDAD
 
 import { alertMessage } from './partials/alert';
-setTimeout(() => {
-  alertMessage();
-}, 2500);
 
