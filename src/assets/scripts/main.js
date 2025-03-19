@@ -31,16 +31,11 @@ setTimeout(() => {
   alertMessage();
 }, 2500);
 
-
-
-
-
-
 // NAV FUNCIONALIDAD
 document.addEventListener('DOMContentLoaded', function() {
 
-  $navItems = document.querySelectorAll('.navegacion__item');
-  $sectionContent = document.querySelector('.plato-info');
+  const $navItems = document.querySelectorAll('.navegacion__item');
+  const $sectionContent = document.querySelector('.plato-info');
   
   // Duplicamos el html por defecto
   const historiaHTML = $sectionContent.innerHTML;
