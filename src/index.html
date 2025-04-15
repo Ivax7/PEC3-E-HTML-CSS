@@ -4,92 +4,70 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon"> -->
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Cuina Catalana</title>
+    <title>Jornadas Economia Circular</title>
   </head>
   <body>
+
     <!-- Header -->
+
     <include src="./views/header.html"></include>
-    <include src="./views/nav.html"></include>
-    
-    <!-- Main -->
-    <main class="contenedor">
-      <section class="plato-info centrado">
+  
+    <div class="container">
+      <div class="titulo">
+        <h1 class="titulo-titulo row">Jornadas Economía Circular 2025</h1>
+        <h2 class="titulo-subtitulo row">Innovación, sostenibilidad y futuro compartido</h2>
+      </div>
+  
+      <!-- <div class="eventos">
+        <h3>Eventos Destacados</h3>
+        <p>🌱 Talleres sobre reciclaje y reutilización creativa.</p>
+        <p>🎤 Charlas con expertos en sostenibilidad.</p>
+        <p>📚 Cursos gratuitos para la ciudadanía.</p>
+      </div> -->
 
-        <article class="plato__detalle plato__detalle--introduccion">
-          <h2 class="plato__titulo">Botifarra amb seques</h2>
-          <img class="plato__imagen" src="./assets/images/butifarra.jpg" alt="">
-          <p class="plato__descripcion justificado">
-            La amb <b>botifarra amb seques</b> és un plat tradicional de la gastronomia catalana que consisteix en una botifarra a la graella acompanyada de mongetes (mongetes blanques o mongetes). És una <b>recepta senzilla</b> però molt apreciada pel seu sabor i <b>vincle amb la cultura</b> i la cuina popular de Catalunya.</p>
-        </article>
-        
-        <article class="plato__detalle plato__detalle--historia">
-          <h2 class="plato__titulo">Història i origen</h2>
-          <img class="plato__imagen" src="./assets/images/historia.jpg" alt="">
-          <p class="plato__descripcion justificado">
-            L'origen d'aquest plat es remunta a la <b>cuina pagesa catalana de l'Edat Mitjana</b>. En aquella època, els agricultors necessitaven menjars nutritius i econòmics, que aprofitessin els productes locals i fossin fàcils de preparar.
-        
-            Les mongetes eren un aliment bàsic perquè els llegums eren fàcils de conservar i proporcionaven energia durant les llargues jornades de treball al camp.
-            La botifarra és una de les <b>embotits més antics de Catalunya</b>, amb referències que daten de <b>l'època romana</b>. La seva preparació s'ha mantingut pràcticament intacta des de llavors, i en molts masos s'hi elabora artesanalment.
-            Al llarg dels segles, aquest plat es va convertir en un emblema de la cuina catalana, passant de les llars rurals als restaurants i festes populars.</p>
-        </article>
-        
-        <article class="plato__detalle plato__detalle--popularidad">
-          <h2 class="plato__titulo">¿Perquè es una recepta famosa?</h2>
-          <img class="plato__imagen" src="./assets/images/popularidad.jpg" alt="">
-          <p class="plato__descripcion justificado">
-            La fama d'aquest plat rau en diversos aspectes:
-          </p>
-        
-          <ul class="justificado">
-            <li>✅ <b>Sabor i senzillesa</b> → Tot i ser un plat simple, la combinació de la botifarra sucosa amb la textura cremosa de les mongetes i un toc d'oli d'oliva el fa irresistible.</li>
-            
-            <li>✅ <b>Ingredient icònic</b> → La botifarra és un embotit típic de Catalunya, amb diverses varietats com la blanca, la negra o la de perol. La qualitat i el sabor artesanal han contribuït a la reputació del plat.</li>
-            
-            <li>✅ <b>Símbol d'identitat</b> → Es considera un plat patrimonial de Catalunya, representant la tradició i la connexió amb la terra.</li>
-            
-            <li>✅ <b>Popularitat en restaurants i festivals</b> → És una recepta que es troba a totes les fondes, masies i restaurants tradicionals catalans, i sol servir-se a festivals gastronòmics i fires.</li>
+      <div class="contenido rounded">
+
+        <div class="eventos">
+          <h3>Eventos Destacados</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>09:00 - 10:00 (14 mayo):</strong> Introducción a la Economía Circular</li>
+            <li class="list-group-item"><strong>10:30 - 12:00 (14 mayo):</strong> Taller de Diseño de Productos Sostenibles</li>
+            <li class="list-group-item"><strong>12:30 - 13:30 (14 mayo):</strong> Mesa Redonda sobre el Futuro del Reciclaje</li>
+            <li class="list-group-item"><strong>15:30 - 17:00 (14 mayo):</strong> Excursión a Planta de Reciclaje Local</li>
+            <li class="list-group-item"><strong>10:30 - 12:00 (15 mayo):</strong> Taller de Moda Circular</li>
+            <li class="list-group-item"><strong>15:30 - 17:00 (16 mayo):</strong> Cierre: Propuestas para el Futuro Circular</li>
           </ul>
-        </article>
-        
-        <article class="plato__detalle plato__detalle--lugares">
-          <h2 class="plato__titulo">Llocs típics</h2>
-          <img class="plato__imagen" src="./assets/images/mapa.png" alt="">
-          <p class="plato__descripcion justificado">
-            "Mongetes amb Botifarra" és molt popular a tot Catalunya, però hi ha algunes regions on destaca especialment:
-          </p>
-            <ul class="justificado">
-              <li>
-                📍 <b>Vallès Occidental i Vallès Oriental</b> → Aquestes comarques són famoses per la seva producció de botifarres de gran qualitat, per la qual cosa és un plat molt comú als seus restaurants i festes populars.
-              </li>
-        
-              <li>
-                📍 <b>Barcelona</b> → Molts restaurants de cuina catalana tradicional a la capital inclouen aquest plat al menú, tant en la versió més clàssica com en versions més gurmet.
-              </li>
-        
-              <li>
-                📍 <b>Girona i la Garrotxa</b> → En aquesta zona s'elabora una botifarra artesana excepcional, cosa que ha fet que el plat guanyi encara més protagonisme.
-              </li>
-        
-              <li>
-                📍 <b>Fires gastronòmiques i festes majors</b> → És un plat imprescindible en moltes festivitats locals, com la Fira de la Botifarra a la Garriga o la Fira de l'Embotit a Olot.
-              </li>
-        
-            </ul>
-        </article>
-      </section>
+        </div>
 
-    </main>
+        <!-- Separador -->
+        <div class="border-top border-2 border-success my-2"></div>
         
-      <!-- Likes -->
-      <include src="./views/likes.html"></include>
-    
-    <!-- Footer -->
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+        <div class="informacion">
+          <h3>¿Dónde?</h3>
+          <p>Edificio MediaTIC, Barcelona. Del 14 al 16 de mayo de 2025.</p>
+        </div>
+      </div>
+  
+      <div class="colaboradores">
+        <h3>Colaboradores</h3>
+        <ul class="colaboradores-container">
+          <li class="ayuntamiento">Ayuntamiento de Barcelona</li>
+          <li class="universidad">Universitat Oberta de Catalunya</li>
+          <ul class="nombre">
+            <li>Xavi Serrano</li>
+            <li>Sergio Perez</li>
+            <li>Joan Martinez</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  
+
+    <!-- <script type="module" src="./assets/scripts/main.js"></script>do not remove this line! -->
   </body>
 
 </html>

@@ -1,13 +1,21 @@
-.header {
-  color: $color-secundario;
-  background-color: $color-primario;
+header {
+  background-color: #d3d3d3;
 }
 
-.header__logo {
-  width: 200px;
-  height: 200px;
+.nav-link {
+  color: #0d6efd;
+  border-radius: 12px;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transition: color 0.3s ease;
+    background-color: #0d6efd;
+    color: #d3d3d3;
+    border-radius: 8px;
+  }
 }
 
-.header__titulo {
-  font-size: 48px;
+.logo-img {
+  max-width: 90px;
+  height: auto;
 }

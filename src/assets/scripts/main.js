@@ -3,6 +3,8 @@
  * see commented examples below
  */
 
+import * as bootstrap from 'bootstrap'
+
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
@@ -34,3 +36,4 @@ setTimeout(() => {
 // NAV FUNCIONALIDAD
 import { navLinks } from './partials/nav';
 navLinks();
+
