@@ -1,23 +1,23 @@
-/* stylelint-disable scss/no-global-function-names */
-@mixin responsive($size) {
-  @media (max-width: map-get($breakpoints, $size)) {
-    @content;
-  }
-}
-/* stylelint-enable scss/no-global-function-names */
+// /* stylelint-disable scss/no-global-function-names */
+// @mixin responsive($size) {
+//   @media (max-width: map-get($breakpoints, $size)) {
+//     @content;
+//   }
+// }
+// /* stylelint-enable scss/no-global-function-names */
 
 
-@mixin link($color) {
-  padding: 10px 15px;
-  font-weight: bold;
-  color: $color;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
+// @mixin link($color) {
+//   padding: 10px 15px;
+//   font-weight: bold;
+//   color: $color;
+//   text-transform: uppercase;
+//   letter-spacing: 2px;
+//   cursor: pointer;
+// }
 
-@function text-shadow($depth) {
-  @return 0px $depth * 1px $depth * 2px rgba(0, 0, 0, 0.4);
-}
+// @function text-shadow($depth) {
+//   @return 0px $depth * 1px $depth * 2px rgba(0, 0, 0, 0.4);
+// }
 
 

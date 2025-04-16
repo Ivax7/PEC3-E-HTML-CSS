@@ -1,4 +1,19 @@
-<footer class="footer centrado">
-  <p class="footer__texto">&copy; Universitat Oberta de Catalunya</p>
-  <p class="footer__texto"><a href="https://github.com/Ivax7" target="_blank">Xavier Serrano Salvador</a></p>
+<footer class="footer p-3">
+  <!-- Logo -->
+  <div class="d-flex align-items-center gap-2">
+    <img src="/src/assets/images/logo.png" alt="Logo" class="logo-img" />
+    <span class="company-name fw-bold text-success">REvolve</span>
+  </div>
+
+  <!-- Navegación -->
+  <include class="footer-navegacion" src="./views/nav.html"></include>
+
+
+  <!-- Créditos -->
+  <div class="d-flex flex-column align-items-end">
+    <p class="footer__texto mb-0 text-secondary">&copy; Universitat Oberta de Catalunya</p>
+    <p class="footer__texto mb-0">
+      <a href="https://github.com/Ivax7" target="_blank" class="github-link">Xavier Serrano Salvador</a>
+    </p>
+  </div>
 </footer>

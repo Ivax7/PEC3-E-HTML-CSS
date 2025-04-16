@@ -1,39 +1,27 @@
-.navegacion {
-  flex-direction: row;
-  background-color: $color-secundario;
-}
 
-.navegacion__lista {
-  display: flex;
-  margin: 0;
-  font-size: 18px;
-}
+.nav-link {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 
-.navegacion__item {
-  margin: 0 40px;
-  @include link($color-texto);
-  transition: all .2s ease-in-out;
-
-  @include responsive(medium) {
-    margin: 0 15px;
-    font-size: 16px;
-  }
-  
-  @include responsive(small) {
-    margin: 0;
-    font-size: 14px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $color-fondo-claro;
+    z-index: -1;
+    transition: width 0.4s ease;
   }
 
-}
-
-.navegacion__item:hover {
-  @include link($color-texto-oscuro);
-}
-
-
-.active {
-  color: $color-texto-oscuro;
-  text-shadow: text-shadow(2);
+  &:hover::before {
+    width: 100%;
+  }
 }
 
 
+nav {
+  justify-content: center;
+}

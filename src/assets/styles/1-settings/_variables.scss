@@ -1,14 +1,23 @@
-$color-primario: #a52a2a;
-$color-secundario: #f4e3c1;
+$color-primario: #fff;
+$color-primario-oscuro: #a8a8a8;
+$color-secundario: color(display-p3 0.09 0.57 0.09);
+$color-secundario-oscuro: #198754;
+$color-fondo: #161616;
+$color-fondo-claro: #ffffff9d;
+
 $color-texto: #474747;
 $color-texto-oscuro: #1d1d1d;
-$color-fondo: #ffffdc;
 
-$fuente-principal: 'Montserrat', sans-serif;
-$fuente-secundaria: 'Merriweather', sans-serif;
 
-$breakpoints: (
-  small: 480px,
-  medium: 768px,
-  large: 1024px
-);
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('../fonts/neuemontreal/NeueMontreal-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Neue Montreal Light';
+  src: url('../fonts/neuemontreal/NeueMontreal-Light.otf') format('opentype');
+}
+
+$fuente-principal: 'Neue Montreal', sans-serif;
+$fuente-secundaria: 'Neue Montreal Light', sans-serif;

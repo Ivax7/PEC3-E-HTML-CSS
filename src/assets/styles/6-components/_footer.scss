@@ -1,7 +1,20 @@
 .footer {
-  margin-block: 20px;
+  max-width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid white;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
+
 
 .footer__texto {
   font-size: 14px;
+  color: white;
+}
+
+.github-link:hover {
+  color: #6985c0;
 }

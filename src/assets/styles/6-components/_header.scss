@@ -1,21 +1,21 @@
 header {
-  background-color: #d3d3d3;
+  background-color: transparent;
+  border-bottom: 2px solid $color-primario-oscuro;
 }
 
-.nav-link {
-  color: #0d6efd;
-  border-radius: 12px;
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transition: color 0.3s ease;
-    background-color: #0d6efd;
-    color: #d3d3d3;
-    border-radius: 8px;
-  }
+.header-container {
+  margin-inline: 40px;
 }
 
 .logo-img {
   max-width: 90px;
   height: auto;
+}
+
+.company-name {
+  font-size: 1.7rem;
+}
+
+header nav {
+  justify-content: end;
 }
