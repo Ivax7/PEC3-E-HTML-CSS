@@ -1,16 +1,13 @@
-
-// body {
-//   font-family: $fuente-principal;
-//   line-height: 1.6;
-//   color: $color-texto;
-//   background: $color-fondo;
-// }
-
-// h1, h2 {
-//   font-family: $fuente-secundaria;
-// }
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  background: $color-fondo;
+  font-family: $fuente-principal;
+  line-height: 1.6;
+  color: $color-fondo;
+}
 
 li {
   list-style: none;
 }
-

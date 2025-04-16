@@ -42,29 +42,21 @@
 @import "6-components/header";
 @import "6-components/footer";
 @import "6-components/nav";
+@import "6-components/_page2";
 @import "7-utilities/helpers";
 
 
 
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #000000;
-  background: $color-fondo;
 
-  font-family: $fuente-principal;
-  line-height: 1.6;
-  color: $color-fondo;
-}
-
-.container {
+.main-content{
   display: flex;
   flex-direction: column;
   gap: 2rem;
   background: $color-fondo;
   padding: 1.5rem;
   color: $color-primario;
+  margin-bottom: 50px;
 }
 
 
@@ -125,7 +117,7 @@ body {
 
 @media (min-width: 768px) {
   // Grid principal
-  .container {
+  .main-content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -182,7 +174,7 @@ body {
 }
 
 @supports not (display: grid) {
-  .container {
+  .main-content{
     display: block;
   }
   .Titulo, .Eventos, .Colaboradores {

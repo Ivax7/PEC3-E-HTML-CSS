@@ -18,22 +18,6 @@ import * as bootstrap from 'bootstrap'
 } )();
 
 
-// NAV FUNCIONALIDAD
-
-
-
-// LIKE / DISLIKE FUNCIONALIDAD
-import { likesSystem } from './partials/likes';
-likesSystem();
-
-// ALERT FUNCIONALIDAD
-
-import { alertMessage } from './partials/alert';
-setTimeout(() => {
-  alertMessage();
-}, 2500);
-
-// NAV FUNCIONALIDAD
-import { navLinks } from './partials/nav';
-navLinks();
-
+// MODAL
+import { modal } from './partials/modal';
+modal();

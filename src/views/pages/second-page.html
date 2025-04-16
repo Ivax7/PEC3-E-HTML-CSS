@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../../assets/styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Jornadas Economia Circular</title>
+    <title>Participantes - Jornadas Economia Circular</title>
   </head>
   <body>
 
@@ -18,55 +18,93 @@
   
 
     <!-- Main content -->
-    <div class="container">
+    <div class="container participantes-content">
       <div class="titulo">
-        <h1 class="titulo-titulo row">Jornadas Economía Circular 2025</h1>
-        <h2 class="titulo-subtitulo row">Innovación, sostenibilidad y futuro compartido</h2>
+        <h1 class="titulo-titulo row">Speakers</h1>
       </div>
 
-      <div class="contenido">
+      <section class="grid-participantes">
 
-        <div class="eventos">
-          <h3 class="fw-bold">Eventos Destacados</h3>
-          <ul class="list-group list-group-flush transparent-list">
-            <li class="list-group-item"><strong>09:00 - 10:00 (14 mayo):</strong> Introducción a la Economía Circular</li>
-            <li class="list-group-item"><strong>10:30 - 12:00 (14 mayo):</strong> Taller de Diseño de Productos Sostenibles</li>
-            <li class="list-group-item"><strong>12:30 - 13:30 (14 mayo):</strong> Mesa Redonda sobre el Futuro del Reciclaje</li>
-            <li class="list-group-item"><strong>15:30 - 17:00 (14 mayo):</strong> Excursión a Planta de Reciclaje Local</li>
-            <li class="list-group-item"><strong>10:30 - 12:00 (15 mayo):</strong> Taller de Moda Circular</li>
-            <li class="list-group-item"><strong>15:30 - 17:00 (16 mayo):</strong> Cierre: Propuestas para el Futuro Circular</li>
-          </ul>
+        <div class="participante" data-bs-toggle="modal" data-bs-target="#participanteModal"
+          data-nombre="Jorge Martínez"
+          data-imagen="../images/speaker1.jpeg"
+          data-descripcion="Diseñador de productos sostenibles con enfoque en materiales reciclables y procesos de producción eficientes.">
+          <img src="../../assets/images/speaker1.jpeg" alt="Jorge Martínez">
+          <h3>Jorge Martínez</h3>
+          <p>Diseñador de productos sostenibles.</p>
         </div>
-
-        <!-- Separador -->
-        <div class="border-top border-2 border-success my-2"></div>
         
-        <div class="informacion">
-          <h3 class="fw-bold">¿Dónde?</h3>
-          <p>Edificio MediaTIC, Barcelona. Del 14 al 16 de mayo de 2025.</p>
+        <div class="participante" data-bs-toggle="modal" data-bs-target="#participanteModal"
+          data-nombre="Laura Gómez"
+          data-imagen="../../assets/images/speaker2.jpg"
+          data-descripcion="Experta en reciclaje y gestión de residuos urbanos.">
+          <img src="../../assets/images/speaker2.jpg" alt="Laura Gómez">
+          <h3>Laura Gómez</h3>
+          <p>Experta en reciclaje y gestión de residuos urbanos.</p>
         </div>
-      </div>
   
-      <div class="colaboradores">
-        <h3 class="fw-bold">Colaboradores</h3>
-        <div class="border-top border-2 border-success my-2"></div>
-        <ul class="colaboradores-container">
-          <li class="ayuntamiento">Ayuntamiento de Barcelona</li>
-          <li class="universidad">Universitat Oberta de Catalunya</li>
-          <ul class="nombre p-0">
-            <li>Xavi Serrano</li>
-            <li>Sergio Perez</li>
-            <li>Joan Martinez</li>
-          </ul>
-        </ul>
-      </div>
+        <div class="participante" data-bs-toggle="modal" data-bs-target="#participanteModal"
+          data-nombre="Ana Ruiz"
+          data-imagen="../../assets/images/speaker3.jpg"
+          data-descripcion="Investigadora en economía circular aplicada, centrada en modelos de producción sostenibles y evaluación de impacto.">
+          <img src="../../assets/images/speaker3.jpg" alt="Ana Ruiz">
+          <h3>Ana Ruiz</h3>
+          <p>Investigadora en economía circular aplicada.</p>
+        </div>
+      
+        <div class="participante" data-bs-toggle="modal" data-bs-target="#participanteModal"
+          data-nombre="Pedro López"
+          data-imagen="../../assets/images/speaker4.jpg"
+          data-descripcion="Consultor en políticas medioambientales, colabora con gobiernos y ONGs para implementar estrategias sostenibles.">
+          <img src="../../assets/images/speaker4.jpg" alt="Pedro López">
+          <h3>Pedro López</h3>
+          <p>Consultor en políticas medioambientales.</p>
+        </div>
+
+        <div class="participante" data-bs-toggle="modal" data-bs-target="#participanteModal"
+          data-nombre="Carla Fernández"
+          data-imagen="../../assets/images/speaker5.jpg"
+          data-descripcion="Emprendedora social y fundadora de una startup de moda circular enfocada en reusar textiles y producción ética.">
+          <img src="../../assets/images/speaker5.jpg" alt="Carla Fernández">
+          <h3>Carla Fernández</h3>
+          <p>Emprendedora social y fundadora de una startup de moda circular.</p>
+        </div>
+
+        <div class="participante" data-bs-toggle="modal" data-bs-target="#participanteModal"
+          data-nombre="David Romero"
+          data-imagen="../../assets/images/speaker6.jpg"
+          data-descripcion="Ingeniero ambiental especializado en soluciones urbanas sostenibles, movilidad verde y planificación ecológica.">
+          <img src="../../assets/images/speaker6.jpg" alt="David Romero">
+          <h3>David Romero</h3>
+          <p>Ingeniero ambiental especializado en soluciones urbanas sostenibles.</p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="participanteModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <img id="modalImagen" class="img-fluid rounded-circle mb-3" alt="">
+                <p id="modalDescripcion"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Puedes añadir más participantes igual -->
+  
+      </section>
       
     </div>
   
     <!-- Footer -->
     <include src="./views/footer.html"></include>
 
-    <!-- <script type="module" src="./assets/scripts/main.js"></script>do not remove this line! -->
+    <script type="module" src="../../assets/scripts/main.js"></script>do not remove this line!
   </body>
 
 </html>
