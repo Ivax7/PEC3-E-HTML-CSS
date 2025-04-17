@@ -14,7 +14,7 @@ export function modal() {
       modalLabel.textContent = nombre;
       modalImagen.src = imagen;
       modalImagen.alt = nombre;
-      modalDescripcion.textContent = descripcion;
+      modalDescripcion.innerHTML = descripcion;
     });
   });
 }

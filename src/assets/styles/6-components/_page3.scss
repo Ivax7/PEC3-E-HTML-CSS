@@ -1,0 +1,104 @@
+.cabecera {
+  background-image: url(/src/assets/images/background-economia-circular.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  padding: 15rem 0;
+}
+
+.titulo-articulo {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #198754ad;
+  padding: 25px;
+}
+
+.articulo {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.cita-articulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: transparent;
+  margin: 0;
+}
+
+.cita-titulo {
+  flex: 1;
+}
+
+.cita-texto {
+  flex: 2;
+}
+
+section {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+
+
+.lista-ventajas {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.lista-ventajas li {
+  background: #464646;
+  border-left: 5px solid #2c7a7b;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #e0f4ee;
+    color: #2c7a7b;
+  }
+}
+
+// Uso del where para la numeración de la lista
+.container :where(li span) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  color: $color-secundario-oscuro;
+  background-color: $color-fondo-claro;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+// Uso del has para la imagen
+article:has(.aplicaciones-futuras img) .aplicaciones-futuras img {
+  width: 100%;
+}
+
+/* Seleccionamos las secciones que contienen un <h3> y centramos el texto del <h3> */
+section:has(h3) h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+
+section:has(blockquote) blockquote {
+  flex: 2;
+  text-align: left;
+  padding-left: 10px;
+  font-style: italic;
+  border-left: 5px solid $color-secundario-oscuro;
+}

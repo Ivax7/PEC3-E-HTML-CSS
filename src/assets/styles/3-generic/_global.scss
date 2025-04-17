@@ -1,13 +1,25 @@
+
+
 body {
   margin: 0;
   padding: 0;
-  background: #000000;
+  min-height: 100dvh; // uso del dinamic viewport height
+  display: flex;
+  flex-direction: column;
   background: $color-fondo;
   font-family: $fuente-principal;
   line-height: 1.6;
-  color: $color-fondo;
+  color: $color-primario;
 }
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  flex: 1;
 }
