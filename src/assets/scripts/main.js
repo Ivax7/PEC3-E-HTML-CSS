@@ -21,3 +21,7 @@ import * as bootstrap from 'bootstrap'
 // MODAL
 import { modal } from './partials/modal';
 modal();
+
+// FORM VALIDATION
+import { formValidation } from './partials/form-validation';
+formValidation();

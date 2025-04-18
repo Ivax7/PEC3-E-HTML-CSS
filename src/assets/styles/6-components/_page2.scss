@@ -7,12 +7,31 @@
   margin-bottom: 50px;
 }
 
+
 .participante {
+  position: relative;
+  overflow: hidden;
   background-color: $color-primario;
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: $color-secundario;
+    z-index: -1;
+    transition: width 0.4s ease;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
 }
 
 .participante img {
@@ -35,27 +54,7 @@
   color: #555;
 }
 
-.participante {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 5px;
-    background-color: $color-secundario;
-    z-index: -1;
-    transition: width 0.4s ease;
-  }
-
-  &:hover::before {
-    width: 100%;
-  }
-}
 
 
 #modalImagen {

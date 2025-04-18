@@ -1,0 +1,75 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon"> -->
+    <link rel="stylesheet" type="text/css" href="../../assets/styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Articulo - Jornadas Economia Circular</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+
+    <include src="./views/header.html"></include>
+  
+
+    <!-- Main content -->
+    <div class="cabecera">
+      <div class="titulo titulo-articulo">
+        <h1 class="titulo-titulo">Economía Circular: El Futuro de la Sostenibilidad</h1>
+        <h2 class="titulo-subtitulo">By: Xavi Serrano Salvador</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <form name="contacto" method="POST" netlify class="p-4">
+        <input type="hidden" name="form-name" value="contacto">
+        <p class="d-none">
+          <label>No rellenar: <input name="bot-field" /></label>
+        </p>
+      
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+          <div class="invalid-feedback">
+            Por favor, introduce tu nombre.
+          </div>
+        </div>
+      
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+          <div class="invalid-feedback">
+            Introduce un correo electrónico válido.
+          </div>
+        </div>
+      
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+          <div class="invalid-feedback">
+            Escribe un mensaje antes de enviar.
+          </div>
+        </div>
+      
+        <button type="submit" class="btn btn-success w-100">Enviar</button>
+      </form>
+      
+    </div>
+
+  
+    <!-- Footer -->
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="../../assets/scripts/main.js"></script>
+  </body>
+
+</html>
