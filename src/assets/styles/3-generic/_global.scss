@@ -18,12 +18,13 @@ li {
 
 a {
   text-decoration: none;
+  
+  &:hover {
+    color: $color-primario-oscuro;
+  }
 }
 
 .container {
   flex: 1;
 }
 
-p {
-  line-height: 2;
-}

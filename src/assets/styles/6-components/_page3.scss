@@ -11,15 +11,15 @@
 .titulo-articulo {
   margin: 0 auto;
   width: 60%;
-  background-color: #198754ad;
+  background-color: $color-terciario-transparente;
   padding: 25px;
 }
 
-.articulo {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
-}
+// .articulo {
+//   max-width: 900px;
+//   margin: auto;
+//   padding: 2rem;
+// }
 
 .cita-articulo {
   display: flex;
@@ -52,16 +52,17 @@ section {
 }
 
 .lista-ventajas li {
-  background: #464646;
-  border-left: 5px solid #2c7a7b;
+  background: $color-fondo-oscuro;
+  border-left: 5px solid $color-terciario;
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #e0f4ee;
-    color: #2c7a7b;
+    background-color: $color-fondo-claro;
+    color: $color-terciario;
   }
+
 }
 
 // Uso del where para la numeración de la lista
@@ -85,14 +86,14 @@ article:has(.aplicaciones-futuras img) .aplicaciones-futuras img {
   width: 100%;
 }
 
-/* Seleccionamos las secciones que contienen un <h3> y centramos el texto del <h3> */
+// Secciones que contienen <h3> centramos el texto
 section:has(h3) h3 {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
 
-
+// Seccion con blockquote decoramos su blockquote
 section:has(blockquote) blockquote {
   flex: 2;
   text-align: left;

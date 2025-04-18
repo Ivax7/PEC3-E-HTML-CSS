@@ -37,8 +37,6 @@
 @import "3-generic/global";
 @import "4-elements/typography";
 @import "5-objects/contenedor";
-@import "6-components/plato";
-@import "6-components/likes";
 @import "6-components/header";
 @import "6-components/footer";
 @import "6-components/nav";
@@ -68,14 +66,7 @@
   font-weight: bold;
 }
 
-.titulo-titulo {
-  text-transform: uppercase;
-  
-}
 
-.titulo-subtitulo {
-  font-family: $fuente-secundaria;
-}
 
 // Contenido / eventos - sitio
 .transparent-list {
@@ -86,6 +77,15 @@
   }
 }
 
+// Uso de :is
+:is(.contenido, .colaboradores) h3 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: $color-secundario;
+  text-transform: uppercase;
+}
+
 .contenido {
   padding: 1rem;
   border-left: 5px solid $color-secundario-oscuro;
@@ -93,15 +93,6 @@
   flex-direction: column;
   gap: 1rem;
   font-size: .9rem;
-}
-
-/* Uso de :is */
-:is(.contenido, .colaboradores) h3 {
-  margin: 0;
-  margin-bottom: 8px;
-  font-size: 1.2rem;
-  color: $color-secundario;
-  text-transform: uppercase;
 }
 
 // Colaboradores

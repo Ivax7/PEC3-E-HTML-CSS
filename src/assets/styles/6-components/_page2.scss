@@ -10,11 +10,10 @@
 
 .participante {
   position: relative;
+  z-index: 1;
   overflow: hidden;
   background-color: $color-primario;
   padding: 1rem;
-  text-align: center;
-  transition: transform 0.3s ease;
   cursor: pointer;
 
   &::before {
@@ -53,8 +52,6 @@
   font-size: 0.95rem;
   color: #555;
 }
-
-
 
 
 #modalImagen {

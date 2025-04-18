@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Articulo - Jornadas Economia Circular</title>
   </head>
+
   <body>
 
     <!-- Header -->
@@ -22,46 +23,43 @@
   
 
     <!-- Main content -->
-    <div class="cabecera">
-      <div class="titulo titulo-articulo">
-        <h1 class="titulo-titulo">Economía Circular: El Futuro de la Sostenibilidad</h1>
-        <h2 class="titulo-subtitulo">By: Xavi Serrano Salvador</h2>
-      </div>
+    <div class="titulo">
+      <h1 class="titulo-titulo row mt-5">Suscríbete a nuestra newsletter</h1>
     </div>
 
     <div class="container">
-      <form name="contacto" method="POST" netlify class="p-4">
-        <input type="hidden" name="form-name" value="contacto">
-        <p class="d-none">
-          <label>No rellenar: <input name="bot-field" /></label>
-        </p>
-      
+      <form name="newsletter" method="POST" netlify class="p-4 needs-validation contenedor" novalidate>
+        <input type="hidden" name="form-name" value="newsletter">
+        
         <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre completo</label>
+          <label for="nombre" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="nombre" name="nombre" required>
           <div class="invalid-feedback">
-            Por favor, introduce tu nombre.
+            Introduce un nombre válido.
           </div>
         </div>
       
         <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
+          <label for="email" class="form-label">Correo electrónico *</label>
           <input type="email" class="form-control" id="email" name="email" required>
           <div class="invalid-feedback">
             Introduce un correo electrónico válido.
           </div>
         </div>
       
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="consentimiento" required>
+          <label class="form-check-label" for="consentimiento">
+            Acepto recibir correos con noticias y actualizaciones.
+          </label>
           <div class="invalid-feedback">
-            Escribe un mensaje antes de enviar.
+            Debes aceptar para continuar.
           </div>
         </div>
       
-        <button type="submit" class="btn btn-success w-100">Enviar</button>
+        <button type="submit" class="btn btn-success w-100">Suscribirme</button>
       </form>
+      
       
     </div>
 
