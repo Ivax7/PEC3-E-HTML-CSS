@@ -1,16 +1,15 @@
 .footer {
   width: 100%;
   max-width: 1480px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
   align-items: center;
-  border-top: 1px solid $color-fondo-claro;
-  gap: 1rem;
-  flex-wrap: wrap;
+  justify-content: space-between;
   bottom: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-top: 1px solid $color-fondo-claro;
 }
-
 
 .footer__texto {
   font-size: 14px;

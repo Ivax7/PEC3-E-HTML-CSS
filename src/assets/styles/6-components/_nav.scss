@@ -4,21 +4,8 @@
   z-index: 1;
   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: $color-fondo-claro;
-    z-index: -1;
-    transition: width 0.4s ease;
-  }
-
-  &:hover::before {
-    width: 100%;
-  }
+  // Añadimos mixin animación hover
+  @include hover-fill-bg(100%, $color-fondo-claro);
 }
 
 

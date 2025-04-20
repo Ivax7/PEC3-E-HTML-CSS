@@ -4,12 +4,11 @@ export function modal() {
   const modalImagen = document.getElementById('modalImagen');
   const modalDescripcion = document.getElementById('modalDescripcion');
 
-  document.querySelectorAll('.participante').forEach(participante => {
+  document.querySelectorAll('.participantes__item').forEach(participante => {
     participante.addEventListener('click', () => {
       const nombre = participante.getAttribute('data-nombre');
       const imagen = participante.getAttribute('data-imagen');
       const descripcion = participante.getAttribute('data-descripcion');
-      console.log('Imagen que se intenta cargar:', imagen);
 
       modalLabel.textContent = nombre;
       modalImagen.src = imagen;

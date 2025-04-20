@@ -1,0 +1,131 @@
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: $color-fondo;
+  margin-bottom: 50px;
+  color: $color-primario;
+}
+
+// Titulo 
+.titulo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+// Contenido / eventos - sitio
+.transparent-list {
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: $color-primario;
+  }
+}
+
+// Uso de :is
+:is(.contenido, .colaboradores) h3 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: $color-secundario;
+  text-transform: uppercase;
+}
+
+.contenido {
+  display: flex;
+  padding: 1rem;
+  border-left: 5px solid $color-secundario-oscuro;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: .9rem;
+}
+
+// Colaboradores
+.colaboradores {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.colaboradores ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  // Grid principal
+  .main-content{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". Titulo Titulo"
+    "Contenido . ."
+    "Contenido . Colaboradores";
+    gap: 0;
+    height: 90vh;
+  }
+
+  .titulo {
+    grid-area: Titulo;
+    align-self: center;
+    justify-self: start;
+    font-size: 3rem;
+  }
+
+  .contenido {
+    grid-area: Contenido;
+  }
+
+  .colaboradores {
+    grid-area: Colaboradores;
+  }
+
+  // Grid secundario
+  .colaboradores__container {
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-area: Colaboradores;
+    grid-template-areas: 
+    "ayuntamiento . ."
+    ". universidad ."
+    ". . nombre"; 
+    gap: 0px 0px; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .colaboradores__ayuntamiento {
+    grid-area: ayuntamiento;
+  }
+  
+  .colaboradores__universidad {
+    grid-area: universidad;
+  }
+  
+  .colaboradores__nombre {
+    grid-area: nombre;
+  }
+}
+
+@supports not (display: grid) {
+  .main-content{
+    display: block;
+  }
+
+  .Titulo, .Eventos, .Colaboradores {
+    margin-bottom: 2rem;
+  }
+
+  .colaboradores__container {
+    display: block;
+  }
+
+  .colaboradores__ayuntamiento, .colaboradores__universidad, .colaboradores__nombre {
+    margin-bottom: 2rem;
+  }
+}

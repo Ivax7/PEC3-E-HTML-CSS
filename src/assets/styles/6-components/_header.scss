@@ -3,6 +3,10 @@ header {
   border-bottom: 2px solid $color-primario-oscuro;
 }
 
+header nav {
+  justify-content: end;
+}
+
 .header-container {
   margin-inline: 40px;
 }
@@ -14,8 +18,4 @@ header {
 
 .company-name {
   font-size: 1.7rem;
-}
-
-header nav {
-  justify-content: end;
 }
