@@ -27,8 +27,10 @@
  * Do NOT include anything else in this file!
  */
 
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
 @import "1-settings/variables";
-@import "8-pages/_page4";
+@import "8-pages/page4";
 
 @import "bootstrap/scss/bootstrap";
 
@@ -42,6 +44,6 @@
 @import "6-components/footer";
 @import "6-components/nav";
 @import "7-utilities/helpers";
-@import "8-pages/_page1";
-@import "8-pages/_page2";
-@import "8-pages/_page3";
+@import "8-pages/page1";
+@import "8-pages/page2";
+@import "8-pages/page3";
