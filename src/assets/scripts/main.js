@@ -5,6 +5,8 @@
 
 import * as bootstrap from 'bootstrap'
 
+import "../styles/main.scss"
+
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
