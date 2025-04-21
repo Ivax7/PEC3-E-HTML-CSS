@@ -27,11 +27,12 @@
  * Do NOT include anything else in this file!
  */
 
+@import "1-settings/variables";
+@import "8-pages/_page4";
+
 @import "bootstrap/scss/bootstrap";
 
-
 // main.scss
-@import "1-settings/variables";
 @import "2-tools/mixins";
 @import "3-generic/reset";
 @import "3-generic/global";
@@ -44,5 +45,3 @@
 @import "8-pages/_page1";
 @import "8-pages/_page2";
 @import "8-pages/_page3";
-@import "8-pages/_page4";
-

@@ -2,10 +2,15 @@ h1 {
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h2 {
   font-family: $fuente-secundaria;
+}
+
+h3 {
+  color: $color-secundario;
 }
 
 p {
