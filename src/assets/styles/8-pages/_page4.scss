@@ -4,6 +4,9 @@
 $input-focus-border-color: $color-secundario-oscuro;
 
 @layer base {
+  body {
+    overflow: hidden;
+  }
   
   .btn {
     padding: 10px;

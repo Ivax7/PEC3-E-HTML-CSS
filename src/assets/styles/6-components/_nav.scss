@@ -16,3 +16,14 @@ nav {
 nav ul {
   justify-content: center;
 }
+
+
+// Estilos icono
+
+.nav-item:first-child a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
