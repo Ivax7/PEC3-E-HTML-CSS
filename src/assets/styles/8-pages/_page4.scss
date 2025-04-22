@@ -5,7 +5,7 @@ $input-focus-border-color: $color-secundario-oscuro;
 
 @layer base {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   
   .btn {
