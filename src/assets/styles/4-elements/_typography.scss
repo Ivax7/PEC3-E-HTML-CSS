@@ -1,18 +1,15 @@
 h1 {
-  justify-content: center;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
+  @apply m-0 text-center uppercase;
 }
 
 h2 {
-  font-family: $fuente-secundaria;
+  @apply font-secundaria;
 }
 
 h3 {
-  color: $color-secundario;
+  @apply text-secundario; 
 }
 
 p {
-  line-height: 2;
+  @apply leading-loose;
 }

@@ -27,16 +27,14 @@
  * Do NOT include anything else in this file!
  */
 
+@import "tailwindcss/index.css"; 
+
 @import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 @import "1-settings/variables";
-@import "8-pages/page4";
-
-@import "bootstrap/scss/bootstrap";
 
 // main.scss
 @import "2-tools/mixins";
-@import "3-generic/reset";
 @import "3-generic/global";
 @import "4-elements/typography";
 @import "5-objects/contenedor";
@@ -46,4 +44,4 @@
 @import "7-utilities/helpers";
 @import "8-pages/page1";
 @import "8-pages/page2";
-@import "8-pages/page3";
+

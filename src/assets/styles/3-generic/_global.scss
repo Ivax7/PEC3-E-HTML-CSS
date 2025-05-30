@@ -1,31 +1,21 @@
 
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100dvh; // uso del dinamic viewport height
-  padding: 0;
-  margin: 0;
-  font-family: $fuente-principal;
-  line-height: 1.6;
-  color: $color-primario;
-  background: $color-fondo;
+  @apply flex flex-col min-h-[100dvh] p-0 m-0 leading-[1.6] text-primario bg-fondo font-principal;
 }
 
 li {
-  list-style: none;
+  @apply list-none;
 }
 
 a {
-  text-decoration: none;
-  @include link($color-primario);
-  
-  &:hover {
-    color: $color-primario-oscuro;
-  }
+  @apply no-underline text-primario;
 }
 
-.container {
-  flex: 1;
+a:hover {
+  @apply text-primario-oscuro;
 }
 
+.success {
+  color: var(--success);
+}

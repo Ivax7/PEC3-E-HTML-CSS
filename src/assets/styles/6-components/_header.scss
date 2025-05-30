@@ -1,21 +1,8 @@
 header {
-  background-color: transparent;
-  border-bottom: 2px solid $color-primario-oscuro;
+  @apply bg-transparent border-b-2;
+  border-color: var(--color-primario-oscuro);
 }
 
 header nav {
-  justify-content: end;
-}
-
-.header-container {
-  margin-inline: 40px;
-}
-
-.logo-img {
-  max-width: 90px;
-  height: auto;
-}
-
-.company-name {
-  font-size: 1.7rem;
+  @apply justify-end;
 }

@@ -3,8 +3,6 @@
  * see commented examples below
  */
 
-import * as bootstrap from 'bootstrap'
-
 import "../styles/main.scss"
 
 // import 'some-node-module';
