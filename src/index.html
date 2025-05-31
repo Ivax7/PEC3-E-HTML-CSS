@@ -18,45 +18,47 @@
     <include src="./views/header.html"></include>
   
 
-    <div class="container-main">
+    <div class="contenedor">
       
       <!-- Main content -->
-      <div class="flex-1 main-content">
-        <div class="titulo">
-          <h1 class="titulo__principal">Jornadas Economía Circular 2025</h1>
-          <h2 class="titulo__subtitulo">Innovación, sostenibilidad y futuro compartido</h2>
+      <div class="grid3x3 gap-0 h-[90vh] p-6 mb-[50px] text-primario bg-fondo">
+        
+        <div class="area-titulo text-[3rem] font-bold self-center justify-self-start">
+          <h1 class="text-4xl font-bold">Jornadas Economía Circular 2025</h1>
+          <h2 class="text-3xl">Innovación, sostenibilidad y futuro compartido</h2>
         </div>      
           
           
-          <div class="contenido">
+          <div class="area-contenido text-[0.8rem] flex flex-col gap-4 p-4 text-sm border-l-4 border-secundario-oscuro">
             
-            <div class="contenido__eventos">
-              <h3 class="fw-bold">Eventos Destacados</h3>
-              <ul class="list-group list-group-flush transparent-list">
-                <li class="list-group-item"><strong>09:00 - 10:00 (14 mayo):</strong> Introducción a la Economía Circular</li>
-                <li class="list-group-item"><strong>10:30 - 12:00 (14 mayo):</strong> Taller de Diseño de Productos Sostenibles</li>
-                <li class="list-group-item"><strong>12:30 - 13:30 (14 mayo):</strong> Mesa Redonda sobre el Futuro del Reciclaje</li>
-                <li class="list-group-item"><strong>15:30 - 17:00 (14 mayo):</strong> Excursión a Planta de Reciclaje Local</li>
-                <li class="list-group-item"><strong>15:30 - 17:00 (16 mayo):</strong> Cierre: Propuestas para el Futuro Circular</li>
+            <div class="mb-2 text-base font-bold">
+              <h3 class="mb-2 text-base font-bold uppercase">Eventos Destacados</h3>
+              <ul class="list-none p-0 m-0 divide-y divide-gray-200 bg-transparent">
+                <li class="bg-transparent border-none text-primario"><strong>09:00 - 10:00 (14 mayo):</strong> Introducción a la Economía Circular</li>
+                <li class="bg-transparent border-none text-primario"><strong>10:30 - 12:00 (14 mayo):</strong> Taller de Diseño de Productos Sostenibles</li>
+                <li class="bg-transparent border-none text-primario"><strong>12:30 - 13:30 (14 mayo):</strong> Mesa Redonda sobre el Futuro del Reciclaje</li>
+                <li class="bg-transparent border-none text-primario"><strong>15:30 - 17:00 (14 mayo):</strong> Excursión a Planta de Reciclaje Local</li>
+                <li class="bg-transparent border-none text-primario"><strong>15:30 - 17:00 (16 mayo):</strong> Cierre: Propuestas para el Futuro Circular</li>
               </ul>
             </div>
             
             <!-- Separador -->
-            <div class="border-top border-2 border-success my-2"></div>
+            <div class="border-t-2 border-success my-2"></div>
             
-            <div class="contenido__informacion">
-              <h3 class="fw-bold">¿Dónde?</h3>
+            <div>
+              <h3 class="fw-bold text-base font-bold uppercase">¿Dónde?</h3>
               <p>Edificio MediaTIC, Barcelona. Del 14 al 16 de mayo de 2025.</p>
             </div>
+
           </div>
           
-          <div class="colaboradores">
-            <h3 class="fw-bold">Colaboradores</h3>
-            <div class="border-top border-2 border-success my-2"></div>
-            <ul class="colaboradores__container">
-              <li class="colaboradores__ayuntamiento">Ayuntamiento de Barcelona</li>
-              <li class="colaboradores__universidad">Universitat Oberta de Catalunya</li>
-              <li class="colaboradores__nombre">
+          <div class="area-colaboradores text-[0.8rem] flex flex-col justify-center p-4 text-sm">
+            <h3 class="mb-2 text-base font-bold uppercase">Colaboradores</h3>
+            <div class="border-t-2 border-success my-2"></div>
+            <ul class="grid-colaboradores pl-5 m-0 space-y-4 gap-0 items-center justify-center">
+              <li class="area-ayuntamiento">Ayuntamiento de Barcelona</li>
+              <li class="area-universidad">Universitat Oberta de Catalunya</li>
+              <li class="area-nombre">
                 <ul class="colaboradores__nombre-list p-0">
                   <li>Xavi Serrano</li>
                   <li>Sergio Perez</li>
@@ -72,7 +74,7 @@
     <!-- Footer -->
     <include src="./views/footer.html"></include>
 
-    <script type="module" src="./assets/scripts/main.js"></script>do not remove this line!
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 
 </html>

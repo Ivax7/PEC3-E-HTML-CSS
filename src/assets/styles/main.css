@@ -126,7 +126,7 @@ p {
 
 .contenedor {
   width: 100%;
-  max-width: 900px;
+  max-width: 1450px;
   margin: 0 auto;
 }
 
@@ -175,3 +175,98 @@ header nav {
   justify-content: center;
   text-align: center;
 }
+
+
+
+
+
+
+
+/* _page1.scss */
+
+
+.colaboradores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  font-size: .9rem;
+
+  &ul {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  .grid3x3 {
+    display: grid;
+    grid-template-areas:
+      ". Titulo Titulo"
+      "Contenido . ."
+      "Contenido . Colaboradores";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .area-titulo {
+    grid-area: Titulo;
+  }
+
+  .area-contenido {
+    grid-area: Contenido;
+  }
+
+  .area-colaboradores {
+    grid-area: Colaboradores;
+  }
+
+  .grid-colaboradores {
+    display: grid;
+    grid-template-areas:
+      "ayuntamiento . ."
+      ". universidad ."
+      ". . nombre";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .area-ayuntamiento {
+    grid-area: ayuntamiento;
+  }
+
+  .area-universidad {
+    grid-area: universidad;
+  }
+
+  .area-nombre {
+    grid-area: nombre;
+  }
+}
+
+
+@media(min-width: 990px) {
+  .contenido, .colaboradores {
+    font-size: .9rem;
+  }
+}
+
+@supports not (display: grid) {
+  .grid3x3 {
+    display: block;
+  }
+
+  .area-titulo, .area-contenido, .area-colaboradores {
+    margin-bottom: 2rem;
+  }
+
+  .grid-colaboradores {
+    display: block;
+  }
+
+  .area-ayuntamiento, .area-universidad, .area-nombre {
+    margin-bottom: 2rem;
+  }
+}
+
+
