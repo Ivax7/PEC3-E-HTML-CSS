@@ -44,8 +44,8 @@
     height: 250px;
     overflow: hidden;
     cursor: pointer;
-    background-color: $color-primario;
-    @include hover-fill-bg(5px, $color-secundario);
+    // background-color: $color-primario;
+    // @include hover-fill-bg(5px, $color-secundario);
     
       &::before {
         position: absolute;
@@ -55,7 +55,7 @@
         width: 0;
         height: 5px;
         content: "";
-        background-color: $color-secundario;
+        // background-color: $color-secundario;
         transition: width 0.4s ease;
       }
 
@@ -75,7 +75,7 @@
         margin-bottom: 0.5rem;
         font-size: 1.4rem;
         font-weight: 600;
-        color: $color-secundario;
+        // color: $color-secundario;
       }
 
       & p {

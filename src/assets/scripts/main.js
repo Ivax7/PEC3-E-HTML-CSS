@@ -3,7 +3,7 @@
  * see commented examples below
  */
 
-import "../styles/main.scss"
+import "../styles/main.css"
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';

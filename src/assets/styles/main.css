@@ -1,0 +1,177 @@
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/* variables.scss */
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('../fonts/neuemontreal/NeueMontreal-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Neue Montreal Light';
+  src: url('../fonts/neuemontreal/NeueMontreal-Light.otf') format('opentype');
+}
+
+:root {
+  --color-primario: #fff;
+  --color-primario-oscuro: #a8a8a8;
+  --color-secundario: color(display-p3 0.09 0.57 0.09);
+  --color-secundario-oscuro: #198754;
+  --color-fondo: #161616;
+  --color-fondo-oscuro: #464646;
+  --color-fondo-claro: #ffffff9d;
+  --color-terciario: #2c7a7b;
+  --color-terciario-transparente: #2c7a7bd8;
+  --success: #198754;
+
+  --fuente-principal: 'Neue Montreal', sans-serif;
+  --fuente-secundaria: 'Neue Montreal Light', sans-serif;
+}
+
+@layer utilities {
+  /* Text colors */
+  .text-primario {
+    color: var(--color-primario);
+  }
+  .text-primario-oscuro {
+    color: var(--color-primario-oscuro);
+  }
+  .text-secundario {
+    color: var(--color-secundario);
+  }
+  .text-secundario-oscuro {
+    color: var(--color-secundario-oscuro);
+  }
+  .text-terciario {
+    color: var(--color-terciario);
+  }
+  .text-terciario-transparente {
+    color: var(--color-terciario-transparente);
+  }
+  .text-success {
+    color: var(--success);
+  }
+
+  /* Background colors */
+  .bg-fondo {
+    background-color: var(--color-fondo);
+  }
+  .bg-fondo-oscuro {
+    background-color: var(--color-fondo-oscuro);
+  }
+  .bg-fondo-claro {
+    background-color: var(--color-fondo-claro);
+  }
+
+  /* Fonts */
+  .font-principal {
+    font-family: var(--fuente-principal);
+  }
+  .font-secundaria {
+    font-family: var(--fuente-secundaria);
+  }
+
+  /* Letter spacing */
+  .tracking-wide2 {
+    letter-spacing: 2px;
+  }
+}
+
+
+
+/* _global.scss */
+
+body {
+  @apply flex flex-col min-h-[100dvh] p-0 m-0 leading-[1.6] text-primario bg-fondo font-principal;
+}
+
+li {
+  @apply list-none;
+}
+
+a {
+  @apply no-underline text-primario cursor-pointer font-bold tracking-wide2;
+}
+
+a:hover {
+  @apply text-primario-oscuro;
+}
+
+
+/* _typography.scss */
+
+h1 {
+  @apply m-0 text-center uppercase;
+}
+
+h2 {
+  @apply font-secundaria;
+}
+
+h3 {
+  @apply text-secundario; 
+}
+
+p {
+  @apply leading-loose;
+}
+
+
+
+/* _contenedor.css */
+
+.contenedor {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/* _footer.scss */
+
+footer {
+  @apply bottom-0 flex flex-wrap gap-4 items-center justify-between w-full mx-auto;
+}
+
+/* _header.scss */
+header {
+  @apply bg-transparent border-b-2 border-primario-oscuro;
+}
+
+header nav {
+  @apply justify-end;
+}
+
+/* _nav.scss */
+
+.nav-link {
+  @apply relative overflow-hidden z-10;
+}
+
+.nav-link::before {
+  content: "";
+  @apply absolute bottom-0 left-0 bg-fondo-claro;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+
+/* _helpers.css */
+
+.centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
