@@ -97,19 +97,15 @@ a {
   @apply no-underline text-primario cursor-pointer font-bold tracking-wide2;
 }
 
-a:hover {
-  @apply text-primario-oscuro;
-}
-
 
 /* _typography.scss */
 
 h1 {
-  @apply m-0 text-center uppercase;
+  @apply text-4xl font-bold m-0 text-center uppercase tracking-wider;
 }
 
 h2 {
-  @apply font-secundaria;
+  @apply font-secundaria text-3xl tracking-wider;
 }
 
 h3 {
@@ -149,15 +145,15 @@ header nav {
 /* _nav.scss */
 
 .nav-link {
-  @apply relative overflow-hidden z-10;
+  @apply relative z-10 p-2;
 }
 
 .nav-link::before {
   content: "";
   @apply absolute bottom-0 left-0 bg-fondo-claro;
-  z-index: -1;
-  width: 0;
   height: 100%;
+  width: 0%;
+  z-index: -1;
   transition: width 0.4s ease;
 }
 
@@ -175,11 +171,6 @@ header nav {
   justify-content: center;
   text-align: center;
 }
-
-
-
-
-
 
 
 /* _page1.scss */
@@ -245,9 +236,20 @@ header nav {
 }
 
 
-@media(min-width: 990px) {
-  .contenido, .colaboradores {
-    font-size: .9rem;
+@media(min-width: 700px) {
+  .area-contenido, .area-colaboradores {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 700px) {
+  .grid3x3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .area-contenido {
+    margin-top: 50px;
   }
 }
 

@@ -20,15 +20,29 @@ export function modal() {
   const modalImagen = document.getElementById('modalImagen');
   const modalDescripcion = document.getElementById('modalDescripcion');
 
+  const cerrarBtn = document.getElementById('cerrarModal');
+
   document.querySelectorAll('.participantes__item').forEach(participante => {
     participante.addEventListener('click', () => {
       const nombre = participante.getAttribute('data-nombre');
       const descripcion = participante.getAttribute('data-descripcion');
 
       modalLabel.textContent = nombre;
-      modalImagen.src = imagenes[nombre] || ''; // fallback en caso de que no haya coincidencia
+      modalImagen.src = imagenes[nombre] || '';
       modalImagen.alt = nombre;
       modalDescripcion.innerHTML = descripcion;
+
+      modal.classList.remove('hidden');
     });
+  });
+
+  cerrarBtn.addEventListener('click', () => {
+    modal.classList.add('hidden');
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
   });
 }

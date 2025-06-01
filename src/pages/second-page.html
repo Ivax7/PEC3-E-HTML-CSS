@@ -1,16 +1,18 @@
+  <link rel="stylesheet" href="../assets/styles/main.css">
+
 <!-- Header -->
 
 <include src="./views/header.html"></include>
 
 <div class="text-center">
-  <h1 class="text-center mt-5 mb-8">Speakers</h1>
+  <h1 class="text-center mt-5 mb-8 text-3xl font-bold">Speakers</h1>
 </div>
 
 <!-- Main content -->
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 participantes__container">
+<div class="flex flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 participantes__container">
   <section class="flex flex-col gap-6 participantes__grid">
     <div
-      class="participantes__item centrado p-4 relative z-[1] h-[250px] overflow-hidden cursor-pointer bg-[var(--color-primario)] transition-colors duration-300 hover:bg-[var(--color-secundario)] hover:p-[5px]"
+      class="participantes__item centrado p-4 relative z-[1] h-[250px] overflow-hidden cursor-pointer bg-[var(--color-primario)] transition-colors duration-300"
       data-bs-toggle="modal" data-bs-target="#participanteModal"
       data-nombre="Jorge Martínez"
       data-descripcion="Diseñador de productos sostenibles con enfoque en materiales reciclables y procesos de producción eficientes.
@@ -30,7 +32,7 @@
     </div>
 
     <div
-      class="participantes__item centrado cursor-pointer"
+      class="participantes__item centrado p-4 relative z-[1] h-[250px] overflow-hidden cursor-pointer bg-[var(--color-primario)] transition-colors duration-300"
       data-bs-toggle="modal" data-bs-target="#participanteModal"
       data-nombre="Laura Gómez"
       data-descripcion="Experta en reciclaje y gestión de residuos urbanos.
@@ -50,7 +52,7 @@
     </div>
 
     <div
-      class="participantes__item centrado cursor-pointer"
+      class="participantes__item centrado p-4 relative z-[1] h-[250px] overflow-hidden cursor-pointer bg-[var(--color-primario)] transition-colors duration-300"
       data-bs-toggle="modal" data-bs-target="#participanteModal"
       data-nombre="Ana Ruiz"
       data-descripcion="Investigadora en economía circular aplicada, centrada en modelos de producción sostenibles y evaluación de impacto.
@@ -70,7 +72,7 @@
     </div>
 
     <div
-      class="participantes__item centrado cursor-pointer"
+      class="participantes__item centrado p-4 relative z-[1] h-[250px] overflow-hidden cursor-pointer bg-[var(--color-primario)] transition-colors duration-300"
       data-bs-toggle="modal" data-bs-target="#participanteModal"
       data-nombre="Pedro López"
       data-descripcion="Consultor en políticas medioambientales, colabora con gobiernos y ONGs para implementar estrategias sostenibles.
@@ -90,7 +92,7 @@
     </div>
 
     <div
-      class="participantes__item centrado cursor-pointer"
+      class="participantes__item centrado p-4 relative z-[1] h-[250px] overflow-hidden cursor-pointer bg-[var(--color-primario)] transition-colors duration-300"
       data-bs-toggle="modal" data-bs-target="#participanteModal"
       data-nombre="Carla Fernández"
       data-descripcion="Emprendedora social y fundadora de una startup de moda circular enfocada en reusar textiles y producción ética.
@@ -110,7 +112,7 @@
     </div>
 
     <div
-      class="participantes__item centrado cursor-pointer"
+      class="participantes__item centrado p-4 relative z-[1] h-[250px] overflow-hidden cursor-pointer bg-[var(--color-primario)] transition-colors duration-300"
       data-bs-toggle="modal" data-bs-target="#participanteModal"
       data-nombre="David Romero"
       data-descripcion="Ingeniero ambiental especializado en soluciones urbanas sostenibles, movilidad verde y planificación ecológica.
@@ -130,35 +132,21 @@
     </div>
 
     <!-- Modal -->
-    <div
-      class="modal fade"
-      id="participanteModal"
-      tabindex="-1"
-      aria-labelledby="modalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel"></h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <img
-              id="modalImagen"
-              class="img-fluid rounded-circle mb-3 w-[250px] h-[250px]"
-              alt=""
-            />
-            <p id="modalDescripcion"></p>
-          </div>
-        </div>
+
+    <div id="participanteModal" class="hidden absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 bg-white shadow-lg rounded-lg text-center p-6 border">
+      <div class="flex justify-between items-center mb-4">
+        <h5 id="modalLabel" class="text-xl font-bold"></h5>
+        <button id="cerrarModal" class="text-gray-500 hover:text-gray-700 text-2xl leading-none focus:outline-none" aria-label="Cerrar">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImagen" class="rounded-full mb-3 w-[250px] h-[250px] object-cover mx-auto" alt=""
+        />
+        <p id="modalDescripcion" class="text-black"></p>
       </div>
     </div>
+
   </section>
 </div>
 
