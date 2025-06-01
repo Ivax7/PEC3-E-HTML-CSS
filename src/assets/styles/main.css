@@ -270,3 +270,49 @@ header nav {
 }
 
 
+
+
+
+
+
+
+/* _page2.scss */
+
+/* Tablet (2 columnas) */
+@media (min-width: 600px) {
+  .participantes__grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .participantes__item {
+    width: calc(50% - 1rem);
+  }
+}
+
+/* Escritorio (4 columnas) */
+@media (min-width: 990px) {
+  .participantes__item {
+    width: calc(25% - 1rem);
+  }
+}
+
+.participantes__item {
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 5px;
+    content: "";
+    background-color: var(--color-secundario);
+    transition: width 0.4s ease;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
