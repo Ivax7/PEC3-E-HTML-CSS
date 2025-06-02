@@ -191,6 +191,27 @@ header nav {
 
 @layer utilities {
   .grid3x3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .area-contenido {
+    margin-top: 50px;
+  }
+
+  .grid-colaboradores {
+    padding-left: 0;
+  }
+
+}
+
+
+@media(min-width: 770px) {
+  .area-contenido, .area-colaboradores {
+    font-size: 1rem;
+  }
+
+  .grid3x3 {
     display: grid;
     grid-template-areas:
       ". Titulo Titulo"
@@ -212,6 +233,7 @@ header nav {
     grid-area: Colaboradores;
   }
 
+
   .grid-colaboradores {
     display: grid;
     grid-template-areas:
@@ -220,6 +242,7 @@ header nav {
       ". . nombre";
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 5px;
   }
 
   .area-ayuntamiento {
@@ -233,24 +256,11 @@ header nav {
   .area-nombre {
     grid-area: nombre;
   }
-}
 
-
-@media(min-width: 700px) {
-  .area-contenido, .area-colaboradores {
-    font-size: 1rem;
-  }
-}
-
-@media(max-width: 700px) {
-  .grid3x3 {
-    display: flex;
-    flex-direction: column;
+  header div {
+    margin-inline: 100px; 
   }
 
-  .area-contenido {
-    margin-top: 50px;
-  }
 }
 
 @supports not (display: grid) {

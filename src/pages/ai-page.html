@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Contest 2024 Edition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #222;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .nav-table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+        
+        .nav-table td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .nav-table a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+        
+        .nav-table a:hover {
+            color: #000;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+            color: #222;
+        }
+        
+        h3 {
+            font-size: 20px;
+            margin: 25px 0 10px 0;
+            color: #222;
+        }
+        
+        .recipe {
+            margin-bottom: 30px;
+        }
+        
+        .recipe-author {
+            font-weight: bold;
+            margin: 5px 0 15px 20px;
+            display: block;
+        }
+        
+        .recipe-description {
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #eee;
+            margin: 40px 0;
+        }
+        
+        .empty-cell {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+  <include src="./views/header.html"></include>
+
+    <h1>Cooking contest 2024 edition</h1>
+
+    <table class="nav-table">
+        <tr>
+            <td class="empty-cell"></td>
+            <td><a href="#">Home</a></td>
+            <td><a href="#">The contest</a></td>
+            <td><a href="#">Recipes</a></td>
+            <td><a href="#">Contents</a></td>
+        </tr>
+        <tr>
+            <td><strong>Contestants</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <p>This section describes the recipes of the best contestants</p>
+
+    <hr>
+
+    <section>
+        <h2>The recipes</h2>
+        <p>These are the recipes of the best contestants</p>
+        
+        <div class="recipe">
+            <h3>Cajun seafood pasta</h3>
+            <span class="recipe-author">Jain Cooper</span>
+            <p class="recipe-description">This Cajun seafood pasta recipe is a bar con, but delicious!</p>
+        </div>
+        
+        <div class="recipe">
+            <h3>Cedar planted salmon</h3>
+            <span class="recipe-author">Maru Alonso</span>
+            <p class="recipe-description">Salmon made as its full potential when it's grilled on top of a coffee plate.</p>
+        </div>
+        
+        <div class="recipe">
+            <h3>Poulet au vinagre</h3>
+            <span class="recipe-author">Mary Ann Bressa</span>
+            <p class="recipe-description">Irresistible oilslakes, cooked with vinegar.</p>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <section>
+        <h3>Cooking contest 2024 edition</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th>Retinas</th>
+                    <th>Contestants</th>
+                    <th>Contest editions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>Cajun seafood pasta</td>
+                    <td>Jatin Cooper</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Cedar planted salmon</td>
+                    <td>Maru Alonso</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Poulet au vinagre</td>
+                    <td>Mary Ann Bressa</td>
+                    <td>2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
