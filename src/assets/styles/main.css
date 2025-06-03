@@ -134,6 +134,7 @@ footer {
 }
 
 /* _header.scss */
+
 header {
   @apply bg-transparent border-b-2 border-primario-oscuro;
 }
@@ -174,7 +175,6 @@ header nav {
 
 
 /* _page1.scss */
-
 
 .colaboradores {
   display: flex;
@@ -280,12 +280,6 @@ header nav {
     margin-bottom: 2rem;
   }
 }
-
-
-
-
-
-
 
 
 /* _page2.scss */
